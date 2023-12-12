@@ -1,6 +1,5 @@
 #python 3.7.1
 import os
-import time
 import datetime
 from googlesearch import search
 
@@ -95,29 +94,24 @@ class main():
                         print('example: sitetarget.com')
                         site = input('input site: ')
                         self.nmap(site)
-                        time.sleep(0.3)
                     elif menu == 2:
                         print('harap masukan target anda')
                         print('jangan menggunakan parameter')
                         print('example: http://sitetarget.com')
                         site = input('input site: ')
                         self.nikto(site)
-                        time.sleep(0.3)
                     elif menu == 3:
                         print('harap masukan target anda')
                         print('harap gunakan parameter')
                         print('example: https://sitetarget.com/news.php?id=1')
                         site = input('input site: ')
                         self.sqlmap(site)
-                        time.sleep(0.3)
                     else:
                         print('no choice!!!')
                         return fucking()
-                        time.sleep(0.5)
                 except ValueError:
                     print('invalid choose!!!')
                     return fucking()
-                    time.sleep(0.5)
             if __name__=='__main__':
                 fucking()
         except ValueError:
@@ -126,5 +120,4 @@ class main():
 if __name__=='__main__':
     start = main()
     start.sidabutar1337()                
-    time.sleep(3)
     
