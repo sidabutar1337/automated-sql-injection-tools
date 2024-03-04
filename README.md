@@ -1,1 +1,1 @@
-# automated-sql-injection-tools
+# sql-injection-tools
