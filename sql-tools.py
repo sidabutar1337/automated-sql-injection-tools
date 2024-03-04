@@ -10,7 +10,7 @@ class hacking:
         self.github = 'https://github.com/sidabutar1337'
     def dork(self,query,number):
         for i in search(query,lang=id,num_results=number):
-            print(i)
+            print(f'results: {i}')
     def scan_vuln(self,target):
         try:
             exploit = f'{target}%27'
